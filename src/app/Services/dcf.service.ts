@@ -46,6 +46,8 @@ export class DcfService {
       return result;
     }
 
+//hallo
+
     public GetUnderValuedDCFValues(): Observable<DCF> {
 
       const allDCFValues = this.getAllDCFValues();
