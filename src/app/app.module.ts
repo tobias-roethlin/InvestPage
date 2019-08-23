@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { DCFOverviewComponent } from './dcfoverview/dcfoverview.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DCFOverviewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
