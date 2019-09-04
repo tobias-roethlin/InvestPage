@@ -11,15 +11,23 @@
           "isDefault": true
         }
       },
+      // {
+      //   "identifier": "ng test",
+      //   "type": "npm",
+      //   "script": "test",
+      //   "problemMatcher": [],
+      //   "group": {
+      //     "kind": "test",
+      //     "isDefault": true
+      //   }
+      // },
       {
-        "identifier": "ng test",
+        "label": "Start Live Unit Tests",
         "type": "npm",
         "script": "test",
-        "problemMatcher": [],
-        "group": {
-          "kind": "test",
-          "isDefault": true
-        }
-      }
+        "group": "test",
+        "isBackground": true,
+        "problemMatcher": "$karma-jasmine3"
+      } 
     ]
   }

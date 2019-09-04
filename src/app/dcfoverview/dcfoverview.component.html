@@ -1,11 +1,12 @@
 <p>
   {{title}}
 </p>
-<button name="load data" (click)="onClickMe()" width="200" title="Hallo"></button>
+<button mat-button (click)="onClickMe()" width="200" title="Hallo">Load data</button>
 <ul class="Dcf">
-  <li *ngFor="let d of Dcf">
-    {{d}}
-  </li>
+  <mat-list *ngFor="let d of Dcf">
+    <mat-list-item>
+        {{d}}
+        <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list >
 </ul>
-
-

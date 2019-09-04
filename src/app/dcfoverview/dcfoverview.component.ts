@@ -1,11 +1,7 @@
 import { Component, OnInit, Pipe } from '@angular/core';
 import { DcfService } from '../Services/dcf.service';
 
-import { catchError, map, tap, flatMap, } from 'rxjs/operators';
-import { StockSymbol } from '../DataObjects/StockSymbol';
 import { Subscription } from 'rxjs';
-
-import { DCF } from '../DataObjects/DCF';
 
 @Component({
   selector: 'app-dcfoverview',
@@ -22,7 +18,6 @@ export class DCFOverviewComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   onClickMe(): void {
